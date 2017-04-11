@@ -21,4 +21,11 @@ public class Photographer {
   public void addCamera(Camera camera){
     cameraCollection.add(camera);
   }
+
+  public Camera removeCamera(Camera camera) {
+    if(cameraCollectionLength() > 0 ) {
+      return cameraCollection.remove(0);
+    }
+    return null;
+  }
 }
