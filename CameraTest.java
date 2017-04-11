@@ -46,5 +46,10 @@ public class CameraTest {
     assertEquals(1, photographer.cameraCollectionLength() );
   }
 
+  @Test
+  public void printCameracollectionDetails() {
+    photographer.addCamera(cameraDigital);
+    assertEquals("xyz", photographer.showDetails() );
+  }
 
 }

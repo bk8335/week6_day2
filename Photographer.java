@@ -22,4 +22,14 @@ public class Photographer {
     }
     return null;
   }
+
+  public String showDetails() {
+    String details = "";
+    for(Printable camera : this.cameraCollection) {
+      details += camera.printDetails() ;
+    }
+    return details;  
+  }
+
+
 }
