@@ -16,10 +16,10 @@ public class Photographer {
     cameraCollection.add(camera);
   }
 
-  // public Printable removeCamera(Printable printable) {
-  //   if(cameraCollectionLength() > 0 ) {
-  //     return cameraCollection.remove(0);
-  //   }
-  //   return null;
-  // }
+  public Printable removeCamera(Printable camera) {
+    if(cameraCollectionLength() > 0 ) {
+      return cameraCollection.remove(0);
+    }
+    return null;
+  }
 }

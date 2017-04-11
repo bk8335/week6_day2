@@ -22,11 +22,11 @@ public class CameraTest {
     assertEquals(1, photographer.cameraCollectionLength() );
   }
 
-  // @Test
-  // public void removeCamera() {
-  //   photographer.addCamera(camera);
-  //   photographer.addCamera(camera);
-  //   photographer.removeCamera(camera);
-  //   assertEquals(1, photographer.cameraCollectionLength() );
-  // }
+  @Test
+  public void removeCamera() {
+    photographer.addCamera(camera);
+    photographer.addCamera(camera);
+    photographer.removeCamera(camera);
+    assertEquals(1, photographer.cameraCollectionLength() );
+  }
 }
