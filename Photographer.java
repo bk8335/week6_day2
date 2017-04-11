@@ -12,9 +12,9 @@ public class Photographer {
     return cameraCollection.size();
   }
 
-  // public void addCamera(Printable printable){
-  //   cameraCollection.add(camera);
-  // }
+  public void addCamera(Printable camera){
+    cameraCollection.add(camera);
+  }
 
   // public Printable removeCamera(Printable printable) {
   //   if(cameraCollectionLength() > 0 ) {
