@@ -17,4 +17,8 @@ public class Photographer {
   public int cameraCollectionLength() {
     return cameraCollection.size();
   }
+
+  public void addCamera(Camera camera){
+    cameraCollection.add(camera);
+  }
 }
