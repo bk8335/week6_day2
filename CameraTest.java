@@ -7,13 +7,8 @@ public class CameraTest {
 
   @Before
   public void before() {
-    photographer = new Photographer("Batman");
+    photographer = new Photographer();
     camera = new Camera(); 
-  }
-
-  @Test
-  public void getPhotographerName() {
-    assertEquals("Batman", photographer.getName() );
   }
 
   @Test
@@ -21,17 +16,17 @@ public class CameraTest {
     assertEquals(0, photographer.cameraCollectionLength() );
   }
 
-  @Test
-  public void addCamera() {
-    photographer.addCamera(camera);
-    assertEquals(1, photographer.cameraCollectionLength() );
-  }
+  // @Test
+  // public void addCamera() {
+  //   photographer.addCamera(camera);
+  //   assertEquals(1, photographer.cameraCollectionLength() );
+  // }
 
-  @Test
-  public void removeCamera() {
-    photographer.addCamera(camera);
-    photographer.addCamera(camera);
-    photographer.removeCamera(camera);
-    assertEquals(1, photographer.cameraCollectionLength() );
-  }
+  // @Test
+  // public void removeCamera() {
+  //   photographer.addCamera(camera);
+  //   photographer.addCamera(camera);
+  //   photographer.removeCamera(camera);
+  //   assertEquals(1, photographer.cameraCollectionLength() );
+  // }
 }
